@@ -1,0 +1,34 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+	<link href="main.css" rel="stylesheet"></head>
+<title>进校</title>
+	<body>
+		<div id="root"><div class="App"><div>
+			<div><p style="font-size: 35px; margin: 10px;">进校</p>
+			<input class="file" type="file" style="display: none;">
+			<img src="wangxuan.jpg" alt="" class="upload"><br>
+			<p style="font-size:15px">王炫-202230820208</p>
+			<hr>
+			<div style="font-size: 33px;padding-left: 33%; padding-right: 33%; letter-spacing: 1px; align-content: center">白名单验证通过</div>					
+<script>
+    var i=0;
+    function myDate(){
+        var now=new Date(); 
+        var year=now.getFullYear();
+        var month=now.getMonth()+1;
+        var day=now.getDate();
+        var hours=now.getHours();
+        var minutes=now.getMinutes();
+        var seconds=now.getSeconds();
+		var millseconds=now.getMilliseconds(); 
+	
+		
+        document.getElementById("div").innerHTML=hours+":"+minutes+":"+seconds+":"+millseconds;
+    }
+    setInterval(myDate,1);
+</script>	
+	<p style="color: red; font-size: 33px; margin-top: 10px;">10-23</p>			
+<p ><div id="div"  style="color: red; font-size: 33px; margin-top: 10px;"></div></p>				
+				<img src="pass.png" alt="" style="margin: -20px;">
+			</div></div></div></div></body></html>

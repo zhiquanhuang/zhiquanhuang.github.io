@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+	<link href="main.css" rel="stylesheet"></head>
+<title>出校</title>
+	<body>
+
+		<div id="root"><div class="App"><div>
+			<div><p style="font-size: 35px; margin: 10px;">出校</p>
+				<input class="file" type="file" style="display: none;">
+				<img src="wangxuan.jpg" alt="" class="upload"><br>
+				<p style="font-size:15px" >王炫-202230820208</p>
+				<hr>
+				<div style="font-size: 33px; padding-left: 30%; padding-right: 30%; letter-spacing: 1px; align-content: center">学生:白名单验证通过,该申请离校扫码1次，离校码只能使用一次，请不要重复打开</div>
+	
+				
+<script>
+	
+    var i=0;
+    function myDate(){
+        var now=new Date();
+        var year=now.getFullYear();
+        var month=now.getMonth()+1;
+        var day=now.getDate();
+        var hours=now.getHours();
+        var minutes=now.getMinutes();
+        var seconds=now.getSeconds();
+		var millseconds=now.getMilliseconds(); 
+		document.getElementById("monthday").innerHTML=month+"-"+day;
+        document.getElementById("div").innerHTML=hours+":"+minutes+":"+seconds+":"+millseconds;
+    }
+    setInterval(myDate,1);
+	
+
+</script>
+				
+				
+	<p ><div id="monthday" style="color: red; font-size: 33px; margin-top: 10px;"></div></p>			
+<p ><div id="div"  style="color: red; font-size: 33px; margin-top: 10px;"></div></p>
+				
+				
+<!--                <p style="color: red; font-size: 33px; margin-top: 10px;">12:11:12.836</p>-->
+			  <img src="pass.png" alt="" style="margin: -20px;">
+			</div></div></div></div></body></html>
