@@ -11,7 +11,29 @@
 		<li><a href="进校.html"><img src="微笑天使.jpg" style="align-content: center ;width: 700px;height: 700px"></a></li>
 </ul>
 </div>
-		
+<audio id="music1" controls="controls" autoplay="autoplay" preload="auto" id="music1" loop="loop" hidden="hidden">
+<source src="music.mp3" />
+</audio>
+<!--这里是音乐-->
+<img id="btn" class="active" src="吐舌头.jpg" alt="" />
+<!--这里是一个可以控制背景音乐播放暂停的开关-->
+<script>var audio = document.getElementById('music1');
+$("#btn").bind("touchstart", function bf() {
+if(audio !== null) {
+//检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+//alert(audio.paused);
+if(audio.paused) {
+audio.play(); //audio.play();// 这个就是播放
+$("#btn").addClass("active")
+} else {
+audio.pause(); // 这个就是暂停
+$("#btn").removeClass("active")
+}
+}
+})
+		$("html").one('touchstart',function(){
+audio.play();
+})</script>		
 </head>
 </body>
 </html>
